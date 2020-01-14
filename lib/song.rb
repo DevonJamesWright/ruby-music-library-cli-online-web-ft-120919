@@ -30,7 +30,7 @@ class Song
     binding.pry
    all.detect {|song| song.name == name}
   end 
-  
+end 
   def self.find_or_create_by_name(name) #look into Song class to see if artist exist, and if not, creates one
    found_song = @@all.detect {|song| song.name == name} #or .find
     if found_song
